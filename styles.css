@@ -1,0 +1,66 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height:100%;
+  }
+
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #fff5f8, #fbd6e2, #f5aac2, #ffd6e8);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    overflow: hidden; /* prevents scroll bar unless absolutely needed */
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+      }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+#container {
+    text-align: center;
+    padding: 20px;
+    transform: scale(1.25);
+    background-color: rgb(252, 234, 240);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3, text {
+    color: #ce4a71;
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ce4a71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a02464;
+}
+
+label { display: inline-block; width: 150px; text-align: right; }
+input { display : inline-block; width: 60px; text-align: right;}
