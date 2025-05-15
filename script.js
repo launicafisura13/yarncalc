@@ -24,9 +24,12 @@ document.getElementById('submit').addEventListener('click', () => {
 
         // Start building result HTML
         let resultHTML = `
-            <div id="container">
-                <p>You will need approximately <strong>${yarnBalls}</strong> skeins of yarn!</p> <br>
+            <p>You will need approximately <strong>${yarnBalls}</strong> skeins of yarn!</p> <br>
+            <p>Estimated cost: $<strong>${cost.toFixed(2)}</strong></p> <br>
+            <button onclick="location.reload()">Try Again</button>
         `;
+        document.getElementById("container").innerHTML = resultHTML;
+
 
         // Only show full price if price was entered and valid
         if (!isNaN(price) && pr.value.trim() !== "") {
