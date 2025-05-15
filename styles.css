@@ -11,56 +11,59 @@ html, body {
   }
 
 body {
-    font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-family: 'Nunito', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(120deg, #fff5f8, #fbd6e2, #f5aac2, #ffd6e8);
+    background-image: url(img/background.jpg);
+    background-color: rgba(255, 255, 255, 0.5); 
+    background-blend-mode: lighten; 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    overflow: hidden; /* prevents scroll bar unless absolutely needed */
-}
-
-@keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-      }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+    overflow: hidden;
 }
 
 #container {
     text-align: center;
     padding: 20px;
     transform: scale(1.25);
-    background-color: rgb(252, 234, 240);
+    background-color: rgb(231, 222, 215);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 h3, text {
-    color: #ce4a71;
+    color: #691b1b;
 }
 
 
 button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #ce4a71;
+    background-color: #691b1b;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
+input {
+    display: inline-block;
+    width: 80px;
+    padding: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    text-align: right;
+    font-size: 1rem;
+}
+
 button:hover {
-    background-color: #a02464;
+    background-color: #3c0d0d;
 }
 
 label { display: inline-block; width: 150px; text-align: right; }
-input { display : inline-block; width: 60px; text-align: right;}
