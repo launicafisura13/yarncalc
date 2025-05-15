@@ -16,7 +16,7 @@ body {
     background-blend-mode: lighten; 
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: -webkit-fill-available;
     background-size: 400% 400%;
     overflow: hidden;
 }
@@ -30,6 +30,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-left: 3em;
     margin-right: 3em;
+    will-change: contents, transform;
 }
 
 h3, text {
